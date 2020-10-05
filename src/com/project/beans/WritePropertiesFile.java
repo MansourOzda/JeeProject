@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.util.Properties;
 
 //import com.sun.xml.internal.fastinfoset.sax.Properties;
-// fichier BDD
+// fichier info BDD
 public class WritePropertiesFile {
 	
 	public static void main(final String[] args) {
