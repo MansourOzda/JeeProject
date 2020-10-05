@@ -1,3 +1,6 @@
+#fichier Info BDD
+src/com/project/beans/WritePropertiesFile.java
+
 # Compiled class file
 *.class
 
