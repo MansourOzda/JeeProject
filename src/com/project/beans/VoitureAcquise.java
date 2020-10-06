@@ -1,8 +1,10 @@
 package com.project.beans;
 
+import java.util.Date;
+
 public class VoitureAcquise {
 	private int id;
-	private int DateAcquisition;
+	private Date DateAcquisition;
 	private int idVoiture;
 	private int idClient;
 	private int idReparation;
@@ -15,10 +17,10 @@ public class VoitureAcquise {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getDateAcquisition() {
+	public Date getDateAcquisition() {
 		return DateAcquisition;
 	}
-	public void setDateAcquisition(int dateAcquisition) {
+	public void setDateAcquisition(Date dateAcquisition) {
 		DateAcquisition = dateAcquisition;
 	}
 	public int getIdVoiture() {
