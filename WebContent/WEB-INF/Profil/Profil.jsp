@@ -40,8 +40,8 @@ try{
 					<h3 class="card-title text-dark text-center">COORDONNEES</h3>
 					<p class="card-text text-dark">Adresse:<b><%= ObjetClient.getAdresse() %></b></p>
 					<p class="card-text text-dark">Code postal:<b><%= ObjetClient.getCodePostal() %></b></p>
-					<p class="card-text text-dark">E-Téléphone:<b><%= ObjetClient.getTelephone() %></b></p>
-					<button type="button" class="btn btn-primary">Modifier mes coordonnées</button>
+					<p class="card-text text-dark">E-Tï¿½lï¿½phone:<b><%= ObjetClient.getTelephone() %></b></p>
+					<button type="button" class="btn btn-primary">Modifier mes coordonnï¿½es</button>
 					</div>
 				</div>
 			</div>
@@ -55,7 +55,7 @@ try{
 			<div class="card m-2 align-middle">
 				<div class="card-body">
 					<p class="card-text text-dark">Nom:<b><%= ObjetClient.getNom() %></b></p>
-					<p class="card-text text-dark">Prénom:<b><%= ObjetClient.getPrenom() %></b></p>
+					<p class="card-text text-dark">Prï¿½nom:<b><%= ObjetClient.getPrenom() %></b></p>
 					<p class="card-text text-dark">E-mail:<b><%= ObjetClient.getEmail() %></b></p>
 					<p class="card-text text-dark">Mot de passe:<b><%= ObjetClient.getTelephone() %></b></p>
 					<button type="button" class="btn btn-primary">Modifier mes
