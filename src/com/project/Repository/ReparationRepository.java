@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ReparationRepository {
 
-private Connection bdd;
+private Connection bdd;//co a la bdd
 	
 	public Connection getBdd() {
 
@@ -83,7 +83,7 @@ public ArrayList<Reparation> getListReparation() {
 }
 
 
-//CRUD pour Reparation
+//CRUD pour Reparation  
 public Reparation find(int id) {
 	
 	try {
