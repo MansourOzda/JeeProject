@@ -4,20 +4,13 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
 
 
-<servlet>
-<servlet-name>accueil</servlet-name>
-<servlet-class>com.project.servlets.accueil</servlet-class>
-</servlet>
 
+ 
 <servlet>
 <servlet-name>ListeVoitures</servlet-name>
-<servlet-class>com.project.servlets.ListVoiture</servlet-class>
+<servlet-class>com.project.servlets.profil.voiture.ListVoiture</servlet-class>
 </servlet>
 
-<servlet>
-<servlet-name>Panier</servlet-name>
-<servlet-class>com.project.servlets.panier.Panier</servlet-class>
-</servlet>
 
 <servlet>
 <servlet-name>Paiement</servlet-name>
@@ -25,40 +18,52 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 </servlet>
 
 <servlet>
-<servlet-name>profil</servlet-name>
-<servlet-class>com.project.servlets.profil.profil</servlet-class>
+<servlet-name>Panier</servlet-name>
+<servlet-class>com.project.servlets.panier.Panier</servlet-class>
 </servlet>
 
+
 <servlet>
-<servlet-name>Editprofil</servlet-name>
-<servlet-class>com.project.servlets.profil.Editprofil</servlet-class>
+<servlet-name>EditProfil</servlet-name>
+<servlet-class>com.project.servlets.profil.EditProfil</servlet-class>
 </servlet>
+
+
+<servlet>
+<servlet-name>Profil</servlet-name>
+<servlet-class>com.project.servlets.profil.Profil</servlet-class>
+</servlet>
+
 
 <servlet>
 <servlet-name>Voiture</servlet-name>
 <servlet-class>com.project.servlets.profil.Voiture.Voiture</servlet-class>
 </servlet>
 
+
 <servlet>
 <servlet-name>EditVoiture</servlet-name>
 <servlet-class>com.project.servlets.profil.Voiture.EditVoiture</servlet-class>
 </servlet>
-
 
 <servlet>
 <servlet-name>ProfilListeVoitures</servlet-name>
 <servlet-class>com.project.servlets.profil.Voiture.ListeVoitures</servlet-class>
 </servlet>
 
+ 
 <servlet>
 <servlet-name>EditAssurance</servlet-name>
 <servlet-class>com.project.servlets.profil.Voiture.EditAssurance</servlet-class>
 </servlet>
 
+
 <servlet>
 <servlet-name>RepairVoiture</servlet-name>
 <servlet-class>com.project.servlets.profil.Voiture.RepairVoiture</servlet-class>
 </servlet>
+
+
 
 <servlet>
 <servlet-name>RepriseVoiture</servlet-name>
