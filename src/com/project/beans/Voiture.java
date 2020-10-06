@@ -5,8 +5,8 @@ import java.util.Date;
 public class Voiture {
 	private int id;
 
-	private String Marque;
 	private Date Année;
+	private String Marque;
 	private String Modele;
 	private String Couleur;
 	private String Carburant;
@@ -24,17 +24,17 @@ public class Voiture {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getMarque() {
-		return Marque;
-	}
-	public void setMarque(String marque) {
-		Marque = marque;
-	}
 	public Date getAnnée() {
 		return Année;
 	}
 	public void setAnnée(Date année) {
 		Année = année;
+	}
+	public String getMarque() {
+		return Marque;
+	}
+	public void setMarque(String marque) {
+		Marque = marque;
 	}
 	public String getModele() {
 		return Modele;
