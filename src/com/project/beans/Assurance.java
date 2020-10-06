@@ -2,8 +2,9 @@ package com.project.beans;
 
 public class Assurance {
 	private int id;
-	private int Prix;
 	private String  LibelleAssurance;
+	private int Prix;
+	
 	
 	
 	public int getId() {
@@ -12,12 +13,6 @@ public class Assurance {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getPrix() {
-		return Prix;
-	}
-	public void setPrix(int prix) {
-		Prix = prix;
-	}
 	public String getLibelleAssurance() {
 		return LibelleAssurance;
 	}
@@ -25,4 +20,11 @@ public class Assurance {
 		LibelleAssurance = libelleAssurance;
 	}
 
+	public int getPrix() {
+		return Prix;
+	}
+	public void setPrix(int prix) {
+		Prix = prix;
+	}
+	
 }

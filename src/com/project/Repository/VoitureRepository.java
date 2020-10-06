@@ -95,7 +95,7 @@ public ArrayList<Voiture> getListVoiture() {
 
 	try {
 
-		PreparedStatement statement = this.getBdd().prepareStatement("Select * from client");
+		PreparedStatement statement = this.getBdd().prepareStatement("Select * from Voiture");
 		
 		
 
