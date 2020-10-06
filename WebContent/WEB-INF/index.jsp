@@ -5,8 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@ include file="header.jsp" %>
-<link rel="stylesheet" href="/CSS/Accueil.css">
+<%@ include file="header.jsp"%>
 </head>
 <body>
 	<div id="carouselExampleIndicators" class="carousel slide"
