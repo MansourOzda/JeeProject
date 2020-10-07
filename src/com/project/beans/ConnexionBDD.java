@@ -38,7 +38,7 @@ public void connection() {
 	        try {
 	           
 	        	System.out.println("test1");
-	            conntemp = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee","root","");
+	            conntemp = DriverManager.getConnection("jdbc:mysql://localhost:3308/projetjee?useSSL=false&serverTimezone=UTC","root","");
 	            System.out.println("test2");
 
 	        } catch (SQLException ex) {

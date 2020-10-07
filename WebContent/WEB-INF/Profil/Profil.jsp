@@ -5,13 +5,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@ include file="../header.jsp"%>
+<%@ include file="../headerBlanc.jsp"%>
 <%@ page import="com.project.beans.*" %>
 <%@ page import="com.project.Repository.*" %>
+<style><%@include file="/WEB-INF/CSS/Profil.css"%></style>
+
 </head>
 
 
-<body class="bg-info text-white">
+<body >
   <%
 try{
 	
@@ -55,7 +57,7 @@ try{
 			<div class="card m-2 align-middle">
 				<div class="card-body">
 					<p class="card-text text-dark">Nom:<b><%= ObjetClient.getNom() %></b></p>
-					<p class="card-text text-dark">Prénom:<b><%= ObjetClient.getPrenom() %></b></p>
+					<p class="card-text text-dark">Prï¿½nom:<b><%= ObjetClient.getPrenom() %></b></p>
 					<p class="card-text text-dark">E-mail:<b><%= ObjetClient.getEmail() %></b></p>
 					<p class="card-text text-dark">Mot de passe:<b><%= ObjetClient.getTelephone() %></b></p>
 					<button type="button" class="btn btn-primary">Modifier mes

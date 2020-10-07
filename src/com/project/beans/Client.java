@@ -1,5 +1,4 @@
 package com.project.beans;
- import  java.util.Date ;
 
 
 public class Client {
@@ -9,10 +8,11 @@ public class Client {
 	private String Email;
 	private String adresse;
 	private String InformationBancaire;
+	private String mdp;
 	private int CodePostal;
 	private int  Capital;
 	private int Telephone;
-	private String Password;
+	
 	
 	public int getId() {
 		return id;
@@ -68,11 +68,12 @@ public class Client {
 	public void setTelephone(int telephone) {
 		Telephone = telephone;
 	}
-	public String getPassword() {
-		return Password;
+	public String getMdp() {
+		return mdp;
 	}
-	public void setPassword(String password) {
-		Password = password;
+	public void setMdp(String mdp) {
+		this.mdp = mdp;
 	}
+
 	
 }
