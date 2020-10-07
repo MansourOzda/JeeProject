@@ -49,7 +49,7 @@ try{
 		</div>
 		<div class="col-sm-3  align-middle">
 			<img
-				src="https://www.domolandes.fr/wp-content/uploads/2016/10/cesi-567x420.jpg"
+				src="https://rouen.cesi.fr/wp-content/uploads/sites/12/2018/11/Cesi_Logo_ALTERNANCE_RVB.png"
 				class="card-img-top" alt="...">
 
 			<div class="card m-2 align-middle">
