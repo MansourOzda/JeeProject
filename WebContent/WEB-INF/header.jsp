@@ -29,13 +29,13 @@
 			</button>
 			<div class="pull-right"> 
 			<button class="btn" type="submit"><img src="https://img.icons8.com/android/24/000000/shopping-cart-loaded.png"/></button>
-			<button class="btn btn-outline-white" type="submit">Pierre Trinquet</button></div>
+			<button onclick="window.location.href='Profil?id=1'" class="btn btn-outline-white" type="submit">Pierre Trinquet</button></div>
 		</nav>
 		<div class="collapse" id="navbarToggleExternalContent" style="width: 22rem;">
 			<div class="bg-white p-4 ">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<button type="button" class="btn text-dark">Parcourir
+						<button onclick="window.location.href='Accueil'" type="button" class="btn text-dark">Parcourir
 
 							les modèles disponibles</button>
 
