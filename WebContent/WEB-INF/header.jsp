@@ -51,7 +51,7 @@
 							voitures</button>
 					</li>
 					<li class="nav-item">
-						<button type="button" class="btn text-danger">Dï¿½connexion</button>
+						<button type="button" class="btn text-danger">Déconnexion</button>
 					</li>
 				</ul>
 			</div>
