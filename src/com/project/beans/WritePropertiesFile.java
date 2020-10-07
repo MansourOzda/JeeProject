@@ -18,7 +18,7 @@ public class WritePropertiesFile {
 
 		try {
 
-			output = new FileOutputStream("build/config.properties");
+			
 
 			prop.setProperty("db.url", "jdbc:mysql://localhost:3306/projetjee");
 			prop.setProperty("db.user", "root");
