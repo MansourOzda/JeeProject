@@ -12,6 +12,7 @@ public class Client {
 	private int CodePostal;
 	private int  Capital;
 	private int Telephone;
+	private String Password;
 	
 	public int getId() {
 		return id;
@@ -66,6 +67,12 @@ public class Client {
 	}
 	public void setTelephone(int telephone) {
 		Telephone = telephone;
+	}
+	public String getPassword() {
+		return Password;
+	}
+	public void setPassword(String password) {
+		Password = password;
 	}
 	
 }

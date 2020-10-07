@@ -1,8 +1,24 @@
 package com.project.beans;
 
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.*;
+import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.*; 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Properties;
+import java.io.IOException;
+import java.util.Properties;
+import java.io.InputStream;
+
 
 public class ConnexionBDD {
 	private Connection bdd;
@@ -21,9 +37,9 @@ public void connection() {
 	        }
 	        try {
 	           
-	        	
-	            conntemp = DriverManager.getConnection("jdbc:mysql://localhost:3306/tp_jee","root","");
-
+	        	System.out.println("test1");
+	            conntemp = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetjee","root","");
+	            System.out.println("test2");
 
 	        } catch (SQLException ex) {
 	            System.out.println("SQLException: " + ex.getMessage());
