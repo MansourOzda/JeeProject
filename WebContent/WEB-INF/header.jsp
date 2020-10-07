@@ -28,7 +28,7 @@
 
 	<div class="fixed-top">
 
-		<nav class="navbar navbar-dark bg-dark">
+		<nav class="navbar navbar-dark">
 
 			<button class="navbar-toggler " type="button" data-toggle="collapse"
 				data-target="#navbarToggleExternalContent"
@@ -36,20 +36,23 @@
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon text-danger"></span>
 			</button>
+			<div class="pull-right"> 
+			<button class="btn" type="submit"><img src="https://img.icons8.com/android/24/000000/shopping-cart-loaded.png"/></button>
+			<button class="btn btn-outline-white" type="submit">Pierre Trinquet</button></div>
 		</nav>
-		<div class="collapse" id="navbarToggleExternalContent">
-			<div class="bg-dark p-4">
+		<div class="collapse" id="navbarToggleExternalContent" style="width: 22rem;">
+			<div class="bg-white p-4 ">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<button type="button" class="btn text-white">Parcourir
+						<button type="button" class="btn text-dark">Parcourir
 							les modèles disponibles</button>
 					</li>
 					<li class="nav-item">
-						<button type="button" class="btn text-white">Modifier mon
+						<button type="button" class="btn text-dark">Modifier mon
 							profil</button>
 					</li>
 					<li class="nav-item">
-						<button type="button" class="btn text-white">Gérer mes
+						<button type="button" class="btn text-dark">Gérer mes
 							voitures</button>
 					</li>
 					<li class="nav-item">
@@ -58,6 +61,9 @@
 				</ul>
 			</div>
 		</div>
+		
+		
+		
 	</div>
 
 </body>
