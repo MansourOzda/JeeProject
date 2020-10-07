@@ -14,12 +14,11 @@
 <meta charset="ISO-8859-1">
 
 
-<<<<<<< HEAD
+
 
 <div class="fixed-top">
 
-=======
->>>>>>> 8547952... ajout vu page profil et modif menu
+
 		<nav class="navbar navbar-dark">
 
 			<button class="navbar-toggler " type="button" data-toggle="collapse"
@@ -37,22 +36,18 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
 						<button type="button" class="btn text-dark">Parcourir
-<<<<<<< HEAD
-							les modï¿½les disponibles</button>
-=======
+
 							les modèles disponibles</button>
->>>>>>> 8547952... ajout vu page profil et modif menu
+
 					</li>
 					<li class="nav-item">
 						<button type="button" class="btn text-dark">Modifier mon
 							profil</button>
 					</li>
 					<li class="nav-item">
-<<<<<<< HEAD
-						<button type="button" class="btn text-dark">Gï¿½rer mes
-=======
+
 						<button type="button" class="btn text-dark">Gérer mes
->>>>>>> 8547952... ajout vu page profil et modif menu
+
 							voitures</button>
 					</li>
 					<li class="nav-item">
