@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_XC_lUAaCEeumB5RAHAAO3g" name="concessionnaire auto">
+  <eAnnotations xmi:id="_XC_lUQaCEeumB5RAHAAO3g" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_XC_lUgaCEeumB5RAHAAO3g" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_XC_lUwaCEeumB5RAHAAO3g" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XC_lVAaCEeumB5RAHAAO3g" name="Class"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XC_lVQaCEeumB5RAHAAO3g" name="Class1"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_XC_lVgaCEeumB5RAHAAO3g" name="Client"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XC_lVwaCEeumB5RAHAAO3g" memberEnd="_XC_lWAaCEeumB5RAHAAO3g _XC_lWgaCEeumB5RAHAAO3g" navigableOwnedEnd="_XC_lWAaCEeumB5RAHAAO3g">
+    <ownedEnd xmi:id="_XC_lWAaCEeumB5RAHAAO3g" visibility="public" type="_XC_lYQaCEeumB5RAHAAO3g" association="_XC_lVwaCEeumB5RAHAAO3g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XC_lWQaCEeumB5RAHAAO3g"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_XC_lWgaCEeumB5RAHAAO3g" visibility="public" type="_XC_lVgaCEeumB5RAHAAO3g" association="_XC_lVwaCEeumB5RAHAAO3g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XC_lWwaCEeumB5RAHAAO3g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XC_lXAaCEeumB5RAHAAO3g" memberEnd="_XC_lXQaCEeumB5RAHAAO3g _XC_lXwaCEeumB5RAHAAO3g" navigableOwnedEnd="_XC_lXQaCEeumB5RAHAAO3g">
+    <ownedEnd xmi:id="_XC_lXQaCEeumB5RAHAAO3g" visibility="public" type="_XC_laQaCEeumB5RAHAAO3g" association="_XC_lXAaCEeumB5RAHAAO3g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XC_lXgaCEeumB5RAHAAO3g"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_XC_lXwaCEeumB5RAHAAO3g" visibility="public" type="_XC_lVgaCEeumB5RAHAAO3g" association="_XC_lXAaCEeumB5RAHAAO3g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XC_lYAaCEeumB5RAHAAO3g"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_lYQaCEeumB5RAHAAO3g" name="Parcourir la liste des voitures en vente">
+    <ownedComment xmi:id="_XC_lYgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lYwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lZAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lZQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lZgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lZwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_XC_laAaCEeumB5RAHAAO3g" name="UseCaseDependency" extendedCase="_XC_lcwaCEeumB5RAHAAO3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_laQaCEeumB5RAHAAO3g" name="Connection">
+    <ownedComment xmi:id="_XC_lagaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lawaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lbAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lbQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lbgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lbwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_XC_lcAaCEeumB5RAHAAO3g" name="UseCaseDependency" extendedCase="_XC_lkgaCEeumB5RAHAAO3g"/>
+    <extend xmi:id="_XC_lcQaCEeumB5RAHAAO3g" name="UseCaseDependency" extendedCase="_XC_lewaCEeumB5RAHAAO3g"/>
+    <extend xmi:id="_XC_lcgaCEeumB5RAHAAO3g" name="UseCaseDependency" extendedCase="_XC_lmQaCEeumB5RAHAAO3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_lcwaCEeumB5RAHAAO3g" name="Consulter une voiture">
+    <ownedComment xmi:id="_XC_ldAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ldQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ldgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ldwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_leAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_leQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <extend xmi:id="_XC_legaCEeumB5RAHAAO3g" name="UseCaseDependency" extendedCase="_XC_liQaCEeumB5RAHAAO3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_lewaCEeumB5RAHAAO3g" name="Reprise de la voiture">
+    <ownedComment xmi:id="_XC_lfAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lfQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lfgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lfwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lgAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lgQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_lggaCEeumB5RAHAAO3g" name="Acheter la voiture">
+    <ownedComment xmi:id="_XC_lgwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lhAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lhQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lhgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lhwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_liAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_liQaCEeumB5RAHAAO3g" name="Customiser la voiture">
+    <ownedComment xmi:id="_XC_ligaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_liwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ljAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ljQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ljgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_ljwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <include xmi:id="_XC_lkAaCEeumB5RAHAAO3g" name="UseCaseDependency" addition="_XC_laQaCEeumB5RAHAAO3g"/>
+    <extend xmi:id="_XC_lkQaCEeumB5RAHAAO3g" name="UseCaseDependency" extendedCase="_XC_lggaCEeumB5RAHAAO3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_lkgaCEeumB5RAHAAO3g" name="Modifier le compte">
+    <ownedComment xmi:id="_XC_lkwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_llAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_llQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_llgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_llwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lmAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XC_lmQaCEeumB5RAHAAO3g" name="Accéder aux commandes">
+    <ownedComment xmi:id="_XC_lmgaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lmwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lnAaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lnQaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lngaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_XC_lnwaCEeumB5RAHAAO3g">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+</uml:Model>
