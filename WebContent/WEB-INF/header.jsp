@@ -35,7 +35,7 @@
 			<div class="bg-white p-4 ">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<button type="button" class="btn text-dark">Parcourir
+						<button onclick="window.location.href='Accueil'" type="button" class="btn text-dark">Parcourir
 
 							les modèles disponibles</button>
 
