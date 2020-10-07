@@ -26,11 +26,17 @@ private Connection bdd;
 	
 protected Client buildObjet(ResultSet result) throws SQLException {
 	Client client = new Client();
-	
+	System.out.println("test:buildObjet1");
+
 		int id = result.getInt(1);
+		System.out.println("test:buildObjet2");
+
 		client.setId(id);
 		
+		System.out.println("test:buildObjet3");
+
 		String Nom = result.getString(2);
+		
 		client.setNom(Nom);
 		
 		String prenom = result.getString(3);
@@ -53,6 +59,7 @@ protected Client buildObjet(ResultSet result) throws SQLException {
 		
 		int Telephone = result.getInt(9);
 		client.setTelephone(Telephone);
+		System.out.println("test:buildObjet3");
 
 	return client;
 }
@@ -78,10 +85,11 @@ public ArrayList<Client> getListClient() {
 	ArrayList<Client> clients = new ArrayList();
 
 	try {
+		System.out.println("test");
 
 		PreparedStatement statement = this.getBdd().prepareStatement("Select * from client");
 		
-		
+		System.out.println("test");
 
 		ResultSet rs = statement.executeQuery();
 		
@@ -104,8 +112,13 @@ public Client find(int id) {
 	try {
 		PreparedStatement statement = this.getBdd().prepareStatement("Select * from Client where IdClient = ?");
 		statement.setInt(1, id);
-		ResultSet result = statement.executeQuery();
-		Client client = buildObjet(result);
+		ResultSet rs = statement.executeQuery();
+
+		rs.next();
+		Client client = buildObjet(rs);
+		
+		
+		//Client client = buildObjet(result);
 		return client;
 		
 	}catch(Exception e) {

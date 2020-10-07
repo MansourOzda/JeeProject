@@ -23,8 +23,8 @@
 	crossorigin="anonymous"></script>
 
 <meta charset="ISO-8859-1">
-</head>
-<body>
+
+
 
 	<div class="fixed-top">
 
@@ -61,10 +61,9 @@
 				</ul>
 			</div>
 		</div>
-		
-		
-		
 	</div>
+</head>
+<body>
 
 </body>
 </html>
