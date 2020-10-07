@@ -51,13 +51,13 @@ try{
 		</div>
 		<div class="col-sm-3  align-middle">
 			<img
-				src="https://www.aovc.org/wp-content/uploads/2015/10/photo-%C3%A0-venir-400x369.jpg"
+				src="https://rouen.cesi.fr/wp-content/uploads/sites/12/2018/11/Cesi_Logo_ALTERNANCE_RVB.png"
 				class="card-img-top" alt="...">
 
 			<div class="card m-2 align-middle">
 				<div class="card-body">
 					<p class="card-text text-dark">Nom:<b><%= ObjetClient.getNom() %></b></p>
-					<p class="card-text text-dark">Prénom:<b><%= ObjetClient.getPrenom() %></b></p>
+					<p class="card-text text-dark">Prï¿½nom:<b><%= ObjetClient.getPrenom() %></b></p>
 					<p class="card-text text-dark">E-mail:<b><%= ObjetClient.getEmail() %></b></p>
 					<p class="card-text text-dark">Mot de passe:<b><%= ObjetClient.getTelephone() %></b></p>
 					<button type="button" class="btn btn-primary">Modifier mes
