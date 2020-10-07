@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 html,body{
-	
-	
+	background-color: black;
+	heigh :100%;
 }
 
-.container1{
-	height: 90%;
-	background-color: black;
+h1,h2{
+	color: white;
+	text-align: center;
+	font-size: 5em;
 }

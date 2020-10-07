@@ -6,14 +6,16 @@
 <style><%@include file="/WEB-INF/CSS/ListeVoitures.css"%></style>
 <meta charset="ISO-8859-1">
 <title>Liste voitures</title>
-<%@ include file="../../header.jsp"%>
+
 
 </head>
 <body>
-
-<container class="container1">
-
-</container>
-
+	<container class="container1">
+		<div>
+			<h1>iKoniK</h1>
+			<h2>Mes voitures acquises</h2>
+		</div>
+		
+	</container>
 </body>
 </html>
