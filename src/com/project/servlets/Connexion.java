@@ -48,17 +48,21 @@ public class Connexion extends HttpServlet {
 		Client objetclient = ObjetClientRepository.authentification(login, password);
 		
 		System.out.println(objetclient);
-		if (objetclient.equals(null)) {
-			
+		if (objetclient.getNom().equals(null)) {
+			System.out.println("non");
+
 			
 			this.getServletContext().getRequestDispatcher( "/WEB-INF/Connexion.jsp" ).forward( request, response );
 		} else {
 			HttpSession session = request.getSession();
 			session.setAttribute("Email", objetclient.getEmail());
 			session.setAttribute("Id", objetclient.getId());
-			
-			
-			this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request,response );
+			System.out.println("ok");
+
+			String redirectURL = "Profil";
+		    response.sendRedirect(redirectURL);
+		    
+			this.getServletContext().getRequestDispatcher( "/Profil" ).forward( request,response );
 		}
 		
 		
@@ -73,7 +77,41 @@ public class Connexion extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		doGet(request, response);
+		String login = request.getParameter("txtLogin");
+		String password = request.getParameter("txtPassword");
+		
+		ClientRepository ObjetClientRepository = new ClientRepository();
+		Client objetclient = ObjetClientRepository.authentification(login, password);
+		
+		System.out.println(objetclient);
+		if (objetclient.getNom().equals(null)) {
+			System.out.println("non");
+
+			
+			this.getServletContext().getRequestDispatcher( "/WEB-INF/Connexion.jsp" ).forward( request, response );
+		} else {
+			HttpSession session = request.getSession();
+			session.setAttribute("Email", objetclient.getEmail());
+			session.setAttribute("Id", objetclient.getId());
+			
+			System.out.println("ok");
+		   
+			String redirectURL = "Profil";
+		    response.sendRedirect(redirectURL);
+		    
+			request.getRequestDispatcher( "/Profil" ).forward( request, response );
+			//this.getServletContext().getRequestDispatcher( "/Accueil" ).forward( request,response );
+		}
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
