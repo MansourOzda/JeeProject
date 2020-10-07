@@ -19,7 +19,7 @@
 <div class="fixed-top">
 
 
-		<nav class="navbar navbar-white">
+		<nav class="navbar navbar-dark">
 
 			<button class="navbar-toggler " type="button" data-toggle="collapse"
 				data-target="#navbarToggleExternalContent"
@@ -29,7 +29,7 @@
 			</button>
 			<div class="pull-right"> 
 			<button class="btn" type="submit"><img src="https://img.icons8.com/android/24/000000/shopping-cart-loaded.png"/></button>
-			<button onclick="window.location.href='Profil?id=1'" class="btn btn-outline-white" type="submit">Pierre Trinquet</button></div>
+			<button onclick="window.location.href='Profil?id=1'" class="btn btn-outline-white text-white" type="submit">Pierre Trinquet</button></div>
 		</nav>
 		<div class="collapse" id="navbarToggleExternalContent" style="width: 22rem;">
 			<div class="bg-white p-4 ">

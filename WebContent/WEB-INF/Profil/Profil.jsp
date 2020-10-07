@@ -5,13 +5,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@ include file="../header.jsp"%>
+<%@ include file="../headerBlanc.jsp"%>
 <%@ page import="com.project.beans.*" %>
 <%@ page import="com.project.Repository.*" %>
+<style><%@include file="/WEB-INF/CSS/Profil.css"%></style>
+
 </head>
 
 
-<body class="bg-info text-white">
+<body >
   <%
 try{
 	
@@ -49,7 +51,7 @@ try{
 		</div>
 		<div class="col-sm-3  align-middle">
 			<img
-				src="https://www.domolandes.fr/wp-content/uploads/2016/10/cesi-567x420.jpg"
+				src="https://www.aovc.org/wp-content/uploads/2015/10/photo-%C3%A0-venir-400x369.jpg"
 				class="card-img-top" alt="...">
 
 			<div class="card m-2 align-middle">

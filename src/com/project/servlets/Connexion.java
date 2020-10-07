@@ -58,7 +58,7 @@ public class Connexion extends HttpServlet {
 			session.setAttribute("Id", objetclient.getId());
 			
 			
-			this.getServletContext().getRequestDispatcher( "/WEB-INF/profil/Profil.jsp" ).forward( request,response );
+			this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request,response );
 		}
 		
 		
