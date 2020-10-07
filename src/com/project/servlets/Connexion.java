@@ -13,7 +13,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import com.project.beans.*;
-
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Connexion
@@ -37,6 +40,32 @@ public class Connexion extends HttpServlet {
 		// TODO Auto-generated method stub
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/Connexion.jsp" ).forward( request, response );
 
+		
+		String login = request.getParameter("txtLogin");
+		String password = request.getParameter("txtPassword");
+		
+		ClientRepository ObjetClientRepository = new ClientRepository();
+		Client objetclient = ObjetClientRepository.authentification(login, password);
+		
+		System.out.println(objetclient);
+		if (objetclient.equals(null)) {
+			
+			
+			this.getServletContext().getRequestDispatcher( "/WEB-INF/Connexion.jsp" ).forward( request, response );
+		} else {
+			HttpSession session = request.getSession();
+			session.setAttribute("Email", objetclient.getEmail());
+			session.setAttribute("Id", objetclient.getId());
+			
+			
+			this.getServletContext().getRequestDispatcher( "/WEB-INF/profil/Profil.jsp" ).forward( request,response );
+		}
+		
+		
+		
+		
+		
+		
 	}
 
 	/**

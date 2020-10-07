@@ -26,17 +26,11 @@ private Connection bdd;
 	
 protected Client buildObjet(ResultSet result) throws SQLException {
 	Client client = new Client();
-	System.out.println("test:buildObjet1");
 
 		int id = result.getInt(1);
-		System.out.println("test:buildObjet2");
-
 		client.setId(id);
-		
-		System.out.println("test:buildObjet3");
 
 		String Nom = result.getString(2);
-		
 		client.setNom(Nom);
 		
 		String prenom = result.getString(3);
@@ -59,7 +53,9 @@ protected Client buildObjet(ResultSet result) throws SQLException {
 		
 		int Telephone = result.getInt(9);
 		client.setTelephone(Telephone);
-		System.out.println("test:buildObjet3");
+		
+		String Password = result.getString(10);
+		client.setPassword(Password);
 
 	return client;
 }
@@ -131,7 +127,7 @@ public Client find(int id) {
 
 public boolean addClient(Client client) {
 	try {
-		PreparedStatement statement = this.getBdd().prepareStatement("insert into client values(?,?,?,?,?,?,?,?,?)");
+		PreparedStatement statement = this.getBdd().prepareStatement("insert into client values(?,?,?,?,?,?,?,?,?,?)");
 		
 		statement.setInt(1,this.getNewId());
 		
@@ -151,6 +147,8 @@ public boolean addClient(Client client) {
 		
 		statement.setInt(9, client.getTelephone());
 		
+		statement.setString(10, client.getPassword());
+		
 		if(statement.executeUpdate() < 1)
 			
 			return false;
@@ -165,7 +163,7 @@ public boolean addClient(Client client) {
 
 public boolean updateClient(Client client) {
 	try {
-		PreparedStatement statement = this.getBdd().prepareStatement("update client set Nom = ? ,Prenom = ? , Email  = ? , adresse  = ? , CodePostal  = ? , Capital = ? , Information_bancaire = ? , Telephone = ?  where IdClient = ?");
+		PreparedStatement statement = this.getBdd().prepareStatement("update client set Nom = ? ,Prenom = ? , Email  = ? , adresse  = ? , CodePostal  = ? , Capital = ? , Information_bancaire = ? , Telephone = ?, Password =?  where IdClient = ?");
 		statement.setString(1, client.getNom());
 		
 		statement.setString(2, client.getPrenom());
@@ -182,7 +180,9 @@ public boolean updateClient(Client client) {
 		
 		statement.setInt(8, client.getTelephone());
 		
-		statement.setInt(9, client.getId());
+		statement.setString(9, client.getPassword());
+
+		statement.setInt(10, client.getId());
 
 		
 		if(statement.executeUpdate() < 1)
@@ -212,6 +212,25 @@ public boolean deleteClient(Client client) {
 }
 
 
+public Client authentification(String Email, String Password) {
+	try {
+		PreparedStatement statement = this.getBdd().prepareStatement(
+				"Select * from Client c where c.Email = ? AND c.Password = ?");
+		statement.setString(1, Email);
+		statement.setString(2, Password);
+		System.out.println("test:authen");
+		ResultSet result = statement.executeQuery();
+		System.out.println("test:authen2");
+		result.next();
+		Client client = buildObjet(result);
+		return client;
 
+	} catch (Exception e) {
+		System.out.println("");
+		e.printStackTrace();
+		Client client = new Client();
+		return client;
+	}
+}
 
 }
